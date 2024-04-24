@@ -4,16 +4,15 @@ import { IoLocationSharp } from "react-icons/io5";
 import Context from "../context/context";
 import FetchedData from "./FetchedData";
 const SearchBar = ({ setCvalue}) => {
-  const { selectedData, setSelectedData,setFocus,Focus } = useContext(Context);
+  const { selectedData, setSelectedData,setFocus,Focus,country,setCountry } = useContext(Context);
   const handleCross = (item1) => {
     if (selectedData.length > 1) {
       const data = selectedData.filter((item2) => item1 !== item2);
       setSelectedData(data);
     }
-    else{
-      setSelectedData([])
-      console.log("hi")
-    }
+    const data1=country.filter(item3=>item3!==item1);
+    setCountry(data1);
+  
   };
 
 const onedata=selectedData[0]?.slice(0,6);
