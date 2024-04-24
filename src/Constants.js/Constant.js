@@ -1,0 +1,1 @@
+export const location_API_KEY="https://d34yb5orp91dp6.cloudfront.net/country_state.json"
