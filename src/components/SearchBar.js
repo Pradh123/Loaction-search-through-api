@@ -12,6 +12,7 @@ const SearchBar = ({ setCvalue}) => {
     }
     else{
       setSelectedData([])
+      console.log("hi")
     }
   };
 
