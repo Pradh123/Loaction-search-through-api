@@ -6,10 +6,13 @@ import FetchedData from "./FetchedData";
 const SearchBar = ({ setCvalue}) => {
   const { selectedData, setSelectedData,setFocus,Focus } = useContext(Context);
   const handleCross = (item1) => {
-   
+    if (selectedData.length > 1) {
       const data = selectedData.filter((item2) => item1 !== item2);
       setSelectedData(data);
-   
+    }
+    else{
+      setSelectedData([])
+    }
   };
 
 const onedata=selectedData[0]?.slice(0,6);
