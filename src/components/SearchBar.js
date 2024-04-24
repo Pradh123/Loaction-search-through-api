@@ -47,7 +47,7 @@ const onedata=selectedData[0]?.slice(0,6);
               {onedata!==undefined&&<p className=" bg-red-300 px-1 mx-1 py-1 my-1 text-black rounded-2xl flex">
                 {`${onedata} ...`}
               </p>}
-              {selectedData.length>1?<button className=" rounded-full p-2 border-2 mx-1">+{selectedData.length-1}</button>:null}
+              {selectedData.length>1?<button className=" rounded-full p-1 border-2 mx-1">+{selectedData.length-1}</button>:null}
         <input
           type="text"
           placeholder={selectedData.length>=1 ?"Add more":"Country,State,City"}
